@@ -21,7 +21,8 @@ git diff --color | diff-so-fancy
 
 **But**, you'll probably want to fancify all your diffs. Run this so `git diff` will use it:
 ```shell
-git config --global core.pager "diff-so-fancy | less --tabs=1,5 -R"
+git config --global pager.diff "diff-so-fancy | less --tabs=1,5 -R"
+git config --global pager.show "diff-so-fancy | less --tabs=1,5 -R"
 ```
 
 Or, create a git alias  in your `~/.gitconfig` for shorthand fanciness:
